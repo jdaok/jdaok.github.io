@@ -25,6 +25,8 @@ body{
   background-color: #f8f9d2;
   background-image: linear-gradient(315deg, #f8f9d2 0%, #e8dbfc 74%);
 }
+
+
 #fader {
   text-align: left;
   position:relative;
@@ -46,10 +48,12 @@ body{
 #fader img.top:hover {
   opacity:0;
 }
+
 .heading {
   margin-top: 12px;
-  margin-bottom: -12px;
+  margin-bottom: 7px;
 }
+
 .glyphs {
 color: black;
 font-size: 25px;
@@ -176,13 +180,25 @@ color:black;
 text-align: right;
 }
 
+.cloud {
+  display:none;
 
+  position:inherit;
+  animation: shake 5s;
+  animation-iteration-count: infinite;
+  z-index:0;
+}
+
+@keyframes shake {
+  0% { transform: translate(0px, 0px) rotate(0deg); }
+  100% { transform: translate(1000px, 0px) rotate(0deg); }}
 
 </style>
 
 
-
 <body>
+  <img class="cloud" src="https://www.stickpng.com/assets/images/580b585b2edbce24c47b2639.png" alt="Cyclone" width="2400" height="1400">
+
 
 
 
@@ -203,7 +219,7 @@ text-align: right;
 
 
 
-<p class="animated fadeIn"> I belong in your arms. </p>
+<p class="heading animated fadeIn"> I belong in your arms. </p>
 <div class = "animated fadeIn">
 <span class="glyphs">
   <a href="https://github.com/jkdao" target="_blank" style="text-decoration: none;">
@@ -248,6 +264,7 @@ text-align: right;
   </div>
 </div>
 
+<h3 id="projectsheading"><strong>SKILLS</strong></h3>
 
 
 
