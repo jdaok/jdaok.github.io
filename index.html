@@ -19,7 +19,7 @@
 body{
   font-family: 'Nunito', sans-serif;
   margin: 5%;
-  font-size: 18px;
+  font-size: 17px;
   text-align: center;
   background-color: #f8f9d2;
   background-image: linear-gradient(315deg, #f8f9d2 0%, #e8dbfc 74%);
@@ -49,8 +49,8 @@ body{
 }
 
 .heading {
-  margin-top: 12px;
-  margin-bottom: 7px;
+  margin-top: 14px;
+  margin-bottom: 10px;
 }
 
 .glyphs {
@@ -157,46 +157,31 @@ color:#7CEDA1;
 }
 
 
-#footer {
-  display:none;
-  bottom: 0;
-  width: 100%;
-  left:0;
+.footer {
   position:fixed;
-  background-color: white;
-  margin-left: 12px;
-  margin-right: 0px;
-
+  left:0px;
+  bottom:0px;
+  height:20px;
+  width:100%;
+  font-size: 13px;
 }
 
-#footername{
-text-align: left;
+.footername{
+float: left;
 }
 
 .footerlinks{
-text-decoration: none;
-color:black;
-text-align: right;
+text-decoration: none !important;
+color:black !important;
+float:right;
 }
 
-.cloud {
-  display:none;
 
-  position:inherit;
-  animation: shake 5s;
-  animation-iteration-count: infinite;
-  z-index:0;
-}
-
-@keyframes shake {
-  0% { transform: translate(0px, 0px) rotate(0deg); }
-  100% { transform: translate(1000px, 0px) rotate(0deg); }}
 
 </style>
 
 
 <body>
-  <img class="cloud" src="https://www.stickpng.com/assets/images/580b585b2edbce24c47b2639.png" alt="Cyclone" width="2400" height="1400">
 
 
 
@@ -218,11 +203,13 @@ text-align: right;
 
 
 
-<p class="heading animated fadeIn"> 'Cause the world goes on without us...
-It doesn't matter what we do... </p>
+<p class="heading animated fadeIn" style="margin-left:20%;margin-right:20%"> I am currently a computer science student planning to graduate UC Davis in Spring 2023.
+ I strive to design sick visuals, clean user interfaces, and learn about new technologies to build compelling products.
+
+</br></br>Skilled in Python, C++, Graphic Design, Photo Manipulation, and VFX / Video Editing. Feel free to contact me by any means. </br>Currently learning: <span class = "hvr-bob">CSS!</span></p>
 <div class = "animated fadeIn">
 <span class="glyphs">
-  <a href="https://github.com/jkdao" target="_blank" style="text-decoration: none;">
+  <a href="https://github.com/jkdao" target="_blank" style="text-decoration: none;margin-top:10px">
     <span class="icon-github-alt glyphs githubz hvr-bob" aria-hidden="true"></span>
   </a>
   <a href="mailto:%20jasonkdao@gmail.com" target="_blank" style="text-decoration: none;">
@@ -239,6 +226,9 @@ It doesn't matter what we do... </p>
 </br></br>
 <iframe width="891" height="511" src="https://www.youtube.com/embed/-3E536KwvuY" frameborder="0"
 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style = "border-radius: 17px 17px 17px 17px;"></iframe>
+
+
+
 
 </br></br></br></br>
 <h3 id="projectsheading"><strong>PROJECTS</strong></h3>
@@ -269,7 +259,7 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 
 <h3 id="projectsheading"><strong>SKILLS</strong></h3>
 
-
+<iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/playlist/winter19/pl.u-06oxDjWuY2maNZV"></iframe>
 
 
 </br></br></br></br>
@@ -277,34 +267,34 @@ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
 
 
 
-<div id = "footer">
-  <strong>
-<div id="footername" >Jason Dao 🧚‍</div>
-
-<a href="https://github.com/jkdao" target="_blank">
-    <span class="footerlinks githubz hvr-bob" >Github</span>
-</a>
-<a href="mailto:%20jasonkdao@gmail.com" target="_blank">
-    <span class="footerlinks gmails hvr-bob" >Contact</span>
-</a>
-<a href="https://www.instagram.com/koiboie/" target="_blank">
-    <span class="footerlinks instas hvr-bob">Instagram</span>
-</a>
-<a href="https://www.last.fm/user/whirIwind" target="_blank">
-    <span class="footerlinks lasts hvr-bob">LastFM</span>
-</a>
-
-
-</strong>
-
-</div>
-
-
 
 
 
 </body>
 
+
+
+<footer class = "footer">
+
+<span class="footername" >Jason Dao 🧚‍</span>
+<span class="footerlinks">
+<a href="https://github.com/jkdao" target="_blank">
+    <span class="githubz hvr-bob" >Github</span>
+</a>
+<a href="mailto:%20jasonkdao@gmail.com" target="_blank">
+    <span class="gmails hvr-bob" >Contact</span>
+</a>
+<a href="https://www.instagram.com/koiboie/" target="_blank">
+    <span class="instas hvr-bob">Instagram</span>
+</a>
+<a href="https://www.last.fm/user/whirIwind" target="_blank">
+    <span class="lasts hvr-bob">LastFM</span>
+</a>
+
+</span>
+
+
+</footer>
 
 
 
