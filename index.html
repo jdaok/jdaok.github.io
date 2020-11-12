@@ -1,298 +1,114 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="gr__jkdao_github_io"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Jason Dao</title>
+<html lang="en"
+<head>
+  <title>Jason Dao</title>
+  <!-- main css -->
+  <link href="index_files/style.css" rel="stylesheet">
+  <!-- bounce animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-
-<!-- glyphs -->
-<link href="index_files/style.css" rel="stylesheet">
-<!-- animations -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-<!-- font -->
-<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
-<!-- bootstrap -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<!-- favicon -->
-<link rel="shortcut icon" href="index_files/favicon.ico" type="image/x-icon" /><style>
-body{
-  font-family: 'Nunito', sans-serif;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 5%;
-  font-size: 17px;
-  text-align: center;
-  background-color: #f8f9d2;
-  background-image: linear-gradient(315deg, #f8f9d2 0%, #e8dbfc 74%);
-}
-
-
-#fader {
-  text-align: left;
-  position:relative;
-  height:140px;
-  width:140px;
-  object-fit:cover;
-  margin:0 auto;
-}
-#fader img {
-  position:absolute;
-  left:0;
-  object-fit:cover;
-  border-radius:100%;
-  -webkit-transition: opacity .5s ease-in-out;
-  -moz-transition: opacity .5s ease-in-out;
-  -o-transition: opacity .5s ease-in-out;
-  transition: opacity .5s ease-in-out;
-}
-#fader img.top:hover {
-  opacity:0;
-}
-
-.heading {
-  margin-top: 14px;
-  margin-bottom: 10px;
-}
-
-.glyphs {
-color: black;
-font-size: 25px;
-margin-bottom: 20px;
-margin-left: 8px;
-margin-right: 8px;
--webkit-transition: color .2s ease-in-out;
--moz-transition: color .2s ease-in-out;
--o-transition: color .2s ease-in-out;
-transition: color .2s ease-in-out;
-}
-.githubz:hover{
-color:#92ABFF;
-}
-.gmails:hover{
-color:#FF9EA7;
-}
-.instas:hover{
-color:#FFAD93;
-}
-.lasts:hover{
-color:#7CEDA1;
-}
-
-@-webkit-keyframes hvr-bob {
-  0% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-  50% {
-    -webkit-transform: translateY(-4px);
-    transform: translateY(-4px);
-  }
-  100% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-}
-@keyframes hvr-bob {
-  0% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-  50% {
-    -webkit-transform: translateY(-4px);
-    transform: translateY(-4px);
-  }
-  100% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-}
-@-webkit-keyframes hvr-bob-float {
-  100% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-}
-@keyframes hvr-bob-float {
-  100% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-}
-.hvr-bob {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
-  -webkit-animation-name: hvr-bob-float, hvr-bob;
-  animation-name: hvr-bob-float, hvr-bob;
-  -webkit-animation-duration: .3s, 1.5s;
-  animation-duration: .3s, 1.5s;
-  -webkit-animation-delay: 0s, .3s;
-  animation-delay: 0s, .3s;
-  -webkit-animation-timing-function: ease-out, ease-in-out;
-  animation-timing-function: ease-out, ease-in-out;
-  -webkit-animation-iteration-count: 1, infinite;
-  animation-iteration-count: 1, infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-direction: normal, alternate;
-  animation-direction: normal, alternate;
-}
-
-
-
-
-
-
-
-
-
-#projectsheading{
-  left:0;
-  position:static;
-  text-align:left;
-  margin-left: 10%;
-}
-
-
-.footer {
-  bottom: 0;
-  height:40px;
-  width:100%;
-  font-size: 16px;
-}
-
-.footername{
-float: left;
-margin-left: 7px;
-}
-
-.footerlinks{
-
-float:right;
-margin-right: 7px;
-
-}
-
-
-
-</style>
-
-
-<body>
-
-
-
-
-<div id="fader">
-  <div class="animated bounce">
-    <img class="bottom" src="https://media.giphy.com/media/VItSsbLcz5cj0BnqLp/giphy.gif" alt="Cyclone" width="140" height="140">
-  <img class="top" src="https://media.giphy.com/media/Qajwlx3TK1sM2eHWNM/giphy.gif" alt="Gabumon" width="140" height="140">
-</div>
-</div>
-
-<div class="animated fadeIn bounce">
-<div class="heading">
-<h1><b>Hi, I'm Jason</b></h1>
-</div>
-</div>
-</div>
-
-
-
-<p class="heading animated fadeIn" style="margin-left:20%;margin-right:20%"> I'm an 18 year old computer science student planning to graduate UC Davis in Spring 2023.
- I strive to design sick visuals, clean user interfaces, and learn about new technologies to build compelling products.
-
-</br></br>Skilled in Python, C++, Graphic Design, Photo Manipulation, and VFX / Video Editing. Feel free to contact me by any means. </br>Currently learning: <span class = "hvr-bob"><strong>Node.js!</strong></span></p>
-<div class = "animated fadeIn">
-<span class="glyphs">
-  <a href="https://github.com/jkdao" target="_blank" style="text-decoration: none;margin-top:10px">
-    <span class="icon-github-alt glyphs githubz hvr-bob" aria-hidden="true"></span>
-  </a>
-  <a href="mailto:%20jasondaok@gmail.com" target="_blank" style="text-decoration: none;">
-    <span class="icon-envelope-o glyphs gmails hvr-bob" aria-hidden="true"></span>
-  </a>
-  <a href="https://www.instagram.com/archillect/" target="_blank" style="text-decoration: none;">
-    <span class="icon-instagram glyphs instas hvr-bob" aria-hidden="true"></span>
-  </a>
-  <a href="https://www.last.fm/user/whirIwind" target="_blank" style="text-decoration: none;">
-    <span class="icon-lastfm glyphs lasts hvr-bob" aria-hidden="true"></span>
-  </a>
-</span>
-
-</br></br>
-
-
-
-
-</br></br>
-<h3 id="projectsheading"><strong>PROJECTS</strong> (WIP)</h3>
-
-
-</br>
-
-
-
-
-<div class="card hvr-bob" style="width: 22rem; margin-right: 5%; margin-left: 5%">
-<a href="https://github.com/jkdao/DMVNinja" target="_blank" style="text-decoration: none;">  <img class="card-img-top center-cropped" src="https://i.imgur.com/P7jGuor.png" alt="Card image cap">
-  <div class="card-body" style="font-size: 13px;color: black; text-align:left">
-    <h5 class="card-title"style= "color: black;">DMVNinja</h5>
-    <p class="card-text"style= "color: black;">DMVNinja will constantly check for appointments at your local specified DMV office, and always keep you booked for the latest availible behind-the-wheel exam. It includes options for preferred dates and handling reCAPTCHA.</p>
-    </a>
+  <div id="avatar" class="animated bounce">
+    <img class="bottom" src="images/me.gif" alt="Cyclone" width="140" height="140">
+    <img class="top" src="images/gabumon.gif" alt="Gabumon" width="140" height="140">
   </div>
-</div>
+
+
+
+<body class="animated fadeIn">
+  <div class=mycontainer>
+
+
+    <myh1>Hi, I'm Jason</myh1>
+
+
+    <p> I'm a 19 year old computer science student planning to graduate UC Davis in Spring 2023.
+      I strive to design sick visuals, clean user interfaces, and learn about new technologies to build compelling products.
+      </br></br>
+      Skilled in Python, C++, Graphic Design, Photo Manipulation, and VFX / Video Editing. Feel free to contact me by any means.
+      </br>Currently learning: <span class="hvr-bob"><strong>Node.js!</strong></span>
+    </p>
 
 
 
 
 
+    <div>
+      <span class="glyphs">
+        <a href="https://github.com/jdaok" target="_blank" style="text-decoration: none;margin-top:10px">
+          <span class="icon-github-alt glyphs githubz hvr-bob" aria-hidden="true"></span>
+        </a>
+        <a href="mailto:%20jasondaok@gmail.com" target="_blank" style="text-decoration: none;">
+          <span class="icon-envelope-o glyphs gmails hvr-bob" aria-hidden="true"></span>
+        </a>
 
-</br></br></br></br>
+        <a href="https://www.last.fm/user/whirIwind" target="_blank" style="text-decoration: none;">
+          <span class="icon-lastfm glyphs lasts hvr-bob" aria-hidden="true"></span>
+        </a>
+      </span>
+      </br>
+
+      <myh2>PROJECTS (WIP)</myh2></br>
 
 
 
 
 
+      <container class="card hvr-float">
+        <a href="https://github.com/jdaok/DMVNinja" style="text-decoration: none;">
+          <img class="card-img-top center-cropped" src="images/DMVNINJA-card.png">
+          <div class="card-body">
+            <h5 class="card-title" >DMVNinja</h5>
+            <p class="card-text">
+              DMVNinja will constantly check for appointments at your local  DMV office and keep you booked for the latest availible behind-the-wheel exam. (Python)
+
+            </p>
+        </a>
+      </div>
+    </container>
+
+    <container class="card hvr-float">
+      <a href="https://github.com/jdaok/pivnert" style="text-decoration: none;">
+        <img class="card-img-top center-cropped" src="images/PIVNERT-card.png">
+        <div class="card-body">
+          <h5 class="card-title" >Pivnert</h5>
+          <p class="card-text">
+            A simple ideal gas law calculator built with Javascript & HTML + CSS. Features conversions for common units.
+          </p>
+      </a>
+    </div>
+  </container>
 
 
+
+  <div id="clear"></div>
+
+
+
+    </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+
+  </div>
+  </div>
 </body>
-
-
-
-<footer class = "footer">
-
-<span class="footername" >Jason Dao 🧚‍</span>
-<span class="footerlinks">
-<a href="https://github.com/jkdao" target="_blank">
-    <span class="githubz hvr-bob" style="text-decoration: none;
-    color:black">Github</span>
-</a>
-<a href="mailto:%20jasondaok@gmail.com" target="_blank">
-    <span class="gmails hvr-bob" style="text-decoration: none;
-    color:black">Contact</span>
-</a>
-<a href="https://www.instagram.com/archillect/" target="_blank">
-    <span class="instas hvr-bob"style="text-decoration: none;
-    color:black">Instagram</span>
-</a>
-<a href="https://www.last.fm/user/whirIwind" target="_blank">
-    <span class="lasts hvr-bob" style="text-decoration: none;
-    color:black">LastFM</span>
-</a>
-
-</span>
-
-
+<footer class="footer">
+  <span class="footername">Jason Dao 🧚‍</span>
+  <span class="footerlinks">
+    <a href="https://github.com/jdaok" target="_blank">
+      <span class="githubz hvr-bob" style="text-decoration: none;
+         color:black">Github</span>
+    </a>
+    <a href="mailto:%20jasondaok@gmail.com" target="_blank">
+      <span class="gmails hvr-bob" style="text-decoration: none;
+         color:black">Email</span>
+    </a>
+    <a href="https://www.last.fm/user/whirIwind" target="_blank">
+      <span class="lasts hvr-bob" style="text-decoration: none;
+         color:black">LastFM</span>
+    </a>
+  </span>
 </footer>
-
-
-
-
-
 
 </html>
