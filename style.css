@@ -53,7 +53,7 @@ li {
 }
 
 .main {
-  width: 55em;
+  width: 60em;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -75,27 +75,25 @@ h2 {
 
 .card {
   text-decoration: none!important;
-  width: 22rem;
-  float:right;
-  margin-right: 115px;
-  margin-left: auto
+  color:black;
+  margin:1em;
+  margin-left:1.5em;
+  margin-right:1.5em;
+  width: 40%;
+  height:23em;
 }
 
 .card-body{
-  color:black;
-
   font-size: 13px;
   text-align:left
 }
 
 .card-title{
   color:black;
-
 }
 
 .card-text{
   color:black;
-
 }
 
 .glyphs {
