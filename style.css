@@ -14,19 +14,57 @@ body {
   margin: 0 auto;
 }
 
-ul {
-  list-style-type: none;
-
-  text-align: right;
-  margin-bottom:3em;
+img{
+  user-drag: none;
+user-select: none;
+-moz-user-select: none;
+-webkit-user-drag: none;
+-webkit-user-select: none;
+-ms-user-select: none;
 
 }
 
-li {
+#aboutme{
+  width:75%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#navbar  {
+  list-style-type: none;
+  text-align: right;
+  margin-bottom:4em;
+
+
+}
+
+#navbar li {
   padding:.7em;
 
   display: inline;
 }
+
+
+/* Page content */
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 10em;
+}
+
+
+a {
+  text-decoration: none !important;
+  color:black;
+}
+
+a:hover{
+  color: white;
+  transition: .2s;
+text-shadow: 0em .1em .4em rgba(0,0,0, .7)
+;}
 
 #avatar img {
   position: absolute;
@@ -55,9 +93,11 @@ li {
 .main {
   width: 60em;
   text-align: center;
+
   margin-left: auto;
   margin-right: auto;
   padding-top:3em;
+  padding-bottom:7em;
 
 }
 

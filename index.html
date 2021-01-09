@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <!-- main css -->
 <link href="style.css" rel="stylesheet">
+<script src="script.js"></script>
 <!-- bounce animation -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 <!-- font -->
@@ -18,17 +19,18 @@
 <body class="animated fadeIn">
   <div class=main>
 
-    <ul>
+    <ul id = "navbar">
       <li><a href="https://jdaok.github.io">About Me</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="https://github.com/jdaok">Github</a></li>
+      <li><a href="mailto:jasondaok@gmail.com">Email</a></li>
+      <li><a href="#projects">Resume</a></li>
     </ul>
 
 
     <div id="avatar" class="animated bounce hvr-wobble-horizontal">
-      <a href="https://jdaok.github.io">
-      <img class="bottom" src="images/me.png" alt="Cyclone" width="140" height="140">
-      <img class="top" src="images/gabumon.gif" alt="Gabumon" width="140" height="140">
-       </a>
+      <img class="bottom" src="images/gabumon.gif" alt="Cyclone" width="140" height="140">
+      <img class="top" src="images/me.png" alt="Gabumon" width="140" height="140">
     </div>
 
 
@@ -37,12 +39,23 @@
     <h1>Hi, I'm Jason</h1>
 
 
-    <p> I'm a 19 year old student studying computer science at Diablo Valley College.</br>
-      I strive to design cool visuals, clean user interfaces, and learn about technologies to build compelling products.
-      </br></br>
-      Skilled in graphic design, photo manipulation, and video editing. Feel free to contact me by any means.
-    </br></br>
-    Check out my <b> <a href="file:///C:/Users/cyclone/Documents/GitHub/jdaok.github.io/images/DMVNINJA-card.png">resume.</a> </b>
+    <p>
+
+
+
+
+I'm a student studying computer science at Diablo Valley College.
+I'm a former project management intern at UC Berkeley.
+I'm passoniate about web development, designing cool visuals, and learn about technologies to build compelling that will help make people's lives a little bit easier.
+Also decent at graphic design, video editing, and making bubble tea. Contact me by any means!
+
+<br><br>
+Current Projects:
+<ul style = "         display: inline-block; transform: translate(-18px, 0px);">
+  <li> Last.FM Top Artists Visualizer </li>
+  <li> Twilio Mental Health Chatbot </li>
+</ul>
+
     </p>
 
 
@@ -127,27 +140,25 @@
 
 
 
-  </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
 
   </div>
   </div>
 </body>
-<footer class="footer">
-  <span class="footername">Jason Dao 🧚‍</span>
-  <span class="footerlinks">
-    <a href="https://github.com/jdaok" target="_blank">
-      <span class="githubz hvr-bob" style="text-decoration: none;
-         color:black">Github</span>
-    </a>
-    <a href="mailto:%20jasondaok@gmail.com" target="_blank">
-      <span class="gmails hvr-bob" style="text-decoration: none;
-         color:black">Email</span>
-    </a>
-    <a href="https://www.last.fm/user/whirIwind" target="_blank">
-      <span class="lasts hvr-bob" style="text-decoration: none;
-         color:black">LastFM</span>
-    </a>
-  </span>
-</footer>
 
 </html>
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
