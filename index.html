@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" <head>
-<title>jdaok - Making stuff</title>
-<!-- bootstrap -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<!-- main css -->
-<link href="style.css" rel="stylesheet">
-<script src="script.js"></script>
-<!-- bounce animation -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-<!-- font -->
-<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
-<link rel="shortcut icon" href="images/favicon.ico" />
 
-
-
+<head>
+  <title>Jason Dao - making stuff</title>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- main css -->
+  <link href="style.css" rel="stylesheet">
+  <script src="script.js"></script>
+  <!-- bounce animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="images/favicon.ico"/>
+</head>
 
 
 <body class="animated fadeIn">
+
+
   <div class=main>
 
     <ul id = "navbar">
@@ -24,7 +26,12 @@
       <li><a href="#projects">Projects</a></li>
       <li><a href="https://github.com/jdaok">Github</a></li>
       <li><a href="mailto:jasondaok@gmail.com">Email</a></li>
-      <li><a href="#projects">Resume</a></li>
+      <li><a href="assets/resume2021.pdf">Resume</a></li>
+    </ul>
+
+    <ul id = "navbar2" >
+      <li><a href="https://jdaok.github.io"> </a></li>
+
     </ul>
 
 
@@ -44,10 +51,10 @@
 
 
 
-I'm a student studying computer science at Diablo Valley College.
+I'm a student studying <b> computer science </b> at Diablo Valley College.
 I'm a former project management intern at UC Berkeley.
 I'm passoniate about web development, designing cool visuals, and learn about technologies to build compelling that will help make people's lives a little bit easier.
-Also decent at graphic design, video editing, and making bubble tea. Contact me by any means!
+Also decent at graphic design, video editing, and making pasta. Contact me by any means!
 
 <br><br>
 Current Projects:
@@ -71,13 +78,11 @@ Current Projects:
           <span class="icon-envelope-o glyphs gmails " aria-hidden="true"></span>
         </a>
 
-        <a href="https://www.last.fm/user/whirIwind" style="text-decoration: none">
-          <span class="icon-lastfm glyphs lasts " aria-hidden="true"></span>
-        </a>
+
       </span>
       </br>
 
-      <h2>Here's what I've made...</h2></br>
+      <h2>Here's what I've made (so far)..</h2></br>
 
 
       <container class="card hvr-float">
@@ -152,13 +157,20 @@ Current Projects:
 window.onscroll = function() {myFunction()};
 
 var navbar = document.getElementById("navbar");
+var navbar2 = document.getElementById("navbar2");
+
 var sticky = navbar.offsetTop;
 
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
+    navbar2.classList.add("showNav")
+
+
   } else {
     navbar.classList.remove("sticky");
+    navbar2.classList.remove("showNav")
+
   }
 }
 </script>

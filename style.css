@@ -12,35 +12,61 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin: 0 auto;
+  margin-top: 3em;
 }
 
 img{
   user-drag: none;
-user-select: none;
--moz-user-select: none;
--webkit-user-drag: none;
--webkit-user-select: none;
--ms-user-select: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 
 }
 
 #aboutme{
+
   width:75%;
   margin-left:auto;
   margin-right:auto;
 }
 
 #navbar  {
+  z-index: 3;
+  border-radius: .5em;
+
+  width:100%;
   list-style-type: none;
   text-align: right;
-  margin-bottom:4em;
+  padding:.5em;
+
+  transition: 1s;
+   transition-property: box-shadow;
+
+
+}
+
+#navbar2  {
+  display:none;
+  border-radius: 25px;
+
+  width:100%;
+  list-style-type: none;
+  text-align: right;
+opacity:100%;
+  padding:.5em;
 
 
 }
 
 #navbar li {
   padding:.7em;
+  display: inline;
+}
 
+#navbar2 li {
+  padding:.7em;
   display: inline;
 }
 
@@ -50,8 +76,16 @@ user-select: none;
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
+  width:inherit !important;
+  background-color: #E8DCFA !important;
   position: fixed;
-  top: 10em;
+  top:0em;
+    background-image: linear-gradient(315deg, #EDE4EF 0%, #e8dbfc 74%);
+
+  box-shadow: 0px 3px 20px  rgba(0, 0, 100, .1);
+
+
+
 }
 
 
@@ -60,7 +94,7 @@ a {
   color:black;
 }
 
-a:hover{
+#navbar a:hover{
   color: white;
   transition: .2s;
 text-shadow: 0em .1em .4em rgba(0,0,0, .7)
@@ -374,4 +408,12 @@ h2 {
   animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+}
+
+.showNav{
+  display: block !important;
+}
+
+b{
+  color:#363e59;
 }
